@@ -33,7 +33,7 @@ namespace EmployeeAdminPortal.Controllers
             var employee = dbContext.Employees.Find(id);
             if(employee == null)
             {
-                return NotFound("The user does not exist");
+                return NotFound("The user does not exist in the database");
             }
             return Ok(employee);
         }
